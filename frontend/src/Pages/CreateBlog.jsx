@@ -14,7 +14,7 @@ const CreateBlog = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('https://blog-project-server-8inikd1cu-vanshdobariyas-projects.vercel.app/create', { title, description, author });
+            const response = await axios.post('https://blog-project-server-8inikd1cu-vanshdobariyas-projects.vercel.app/b/create', { title, description, author });
             setSuccess('Blog post created successfully!');
             navigate("/");
             setError('');

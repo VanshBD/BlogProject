@@ -32,7 +32,7 @@ const UpdateBlogPost = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.put(`http://localhost:7890/BlogPersonalApp/blog/update/${id}`, post); 
+            const response = await axios.put(`https://blog-project-server-8inikd1cu-vanshdobariyas-projects.vercel.app/b/${id}`, post); 
             if (response.status === 200) {
                 navigate(`/blogs/${id}`); 
             }

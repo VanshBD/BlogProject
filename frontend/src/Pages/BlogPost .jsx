@@ -44,7 +44,7 @@ const BlogPost = () => {
   const handleDelete = async () => {
     try {
       await axios.delete(
-        `https://blog-project-server-8inikd1cu-vanshdobariyas-projects.vercel.app/delete/${id}`
+        `https://blog-project-server-8inikd1cu-vanshdobariyas-projects.vercel.app/b/delete/${id}`
       ); // Adjust the URL according to your API
       navigate("/"); // Redirect to homepage or blog list after deleting
     } catch (err) {

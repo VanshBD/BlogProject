@@ -16,7 +16,7 @@ dotenv.config()
 app.use(express.json())
 app.use(cors())
 
-app.use("https://blog-project-server-8inikd1cu-vanshdobariyas-projects.vercel.app",blogRoute);
+app.use("https://blog-project-server-8inikd1cu-vanshdobariyas-projects.vercel.app/b",blogRoute);
 app.get(("/"),(req,res)=>{
     res.status(200).send('dcgszgc')
 })
