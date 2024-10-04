@@ -13,7 +13,7 @@ const BlogPost = () => {
     const fetchPost = async () => {
       try {
         const response = await axios.get(
-          `https://blog-project-server-8inikd1cu-vanshdobariyas-projects.vercel.app/${id}`
+          `http://localhost:7890/BlogPersonalApp/blog/${id}`
         ); // Adjust the URL according to your API
         setPost(response.data);
       } catch (err) {
@@ -44,7 +44,7 @@ const BlogPost = () => {
   const handleDelete = async () => {
     try {
       await axios.delete(
-        `https://blog-project-server-8inikd1cu-vanshdobariyas-projects.vercel.app/delete/${id}`
+        `http://localhost:7890/BlogPersonalApp/blog/delete/${id}`
       ); // Adjust the URL according to your API
       navigate("/"); // Redirect to homepage or blog list after deleting
     } catch (err) {

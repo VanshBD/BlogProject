@@ -12,7 +12,7 @@ const UpdateBlogPost = () => {
     useEffect(() => {
         const fetchPost = async () => {
             try {
-                const response = await axios.get(`https://blog-project-server-8inikd1cu-vanshdobariyas-projects.vercel.app/${id}`); 
+                const response = await axios.get(`http://localhost:7890/BlogPersonalApp/blog/${id}`); 
                 setPost(response.data);
             } catch (err) {
                 setError(err.response?.data?.message || 'Failed to fetch post');
@@ -32,7 +32,7 @@ const UpdateBlogPost = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.put(`https://blog-project-server-8inikd1cu-vanshdobariyas-projects.vercel.app/${id}`, post); 
+            const response = await axios.put(`http://localhost:7890/BlogPersonalApp/blog/update/${id}`, post); 
             if (response.status === 200) {
                 navigate(`/blogs/${id}`); 
             }

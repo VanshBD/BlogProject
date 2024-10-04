@@ -11,7 +11,7 @@ const Homepage = () => {
     const fetchPosts = async () => {
       try {
         const response = await axios.get(
-          "https://blog-project-server-8inikd1cu-vanshdobariyas-projects.vercel.app/"
+          "http://localhost:7890/BlogPersonalApp/blog/"
         );
         setPosts(response.data);
       } catch (err) {
