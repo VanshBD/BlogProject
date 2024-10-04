@@ -18,7 +18,7 @@ app.use(cors())
 
 app.use("/BlogPersonalApp/blog",blogRoute);
 app.get(("/"),(req,res)=>{  
-    res.status(200).send('dcgszgc')
+    res.status(200).send('server is live ')
 })
 
 app.listen(PORT,()=>{
